@@ -139,7 +139,7 @@ const App: React.FC = () => {
                <div className="absolute -top-8 -left-8 sm:-top-12 sm:-left-12 text-5xl sm:text-7xl animate-bounce z-20">💖</div>
                <div className="absolute -top-8 -right-8 sm:-top-12 sm:-right-12 text-5xl sm:text-7xl animate-bounce delay-300 z-20">🎀</div>
                <img
-                 src="/images/together.jpeg"
+                 src={`${import.meta.env.BASE_URL}images/together.jpeg`}
                  alt="Nosotros juntos"
                  className="w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 rounded-3xl object-cover z-10 shadow-[0_0_60px_rgba(255,105,180,0.5)] border-4 border-white ring-4 ring-pink-300 animate-in fade-in zoom-in"
                />

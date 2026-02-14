@@ -3,8 +3,8 @@ import React, { useState } from 'react';
 import { AvatarProps } from '../types';
 
 const STATIC_IMAGES: Record<string, string> = {
-  boyfriend: '/images/boyfriend.png',
-  girlfriend: '/images/girlfriend.png',
+  boyfriend: `${import.meta.env.BASE_URL}images/boyfriend.png`,
+  girlfriend: `${import.meta.env.BASE_URL}images/girlfriend.png`,
 };
 
 const FALLBACK_EMOJI: Record<string, string> = {

@@ -3,7 +3,7 @@ import React, { useState, useCallback, useRef } from 'react';
 import FloatingHearts from './components/FloatingHearts';
 import DisneyAvatar from './components/DisneyAvatar';
 import { AppState } from './types';
-import confetti from 'https://cdn.skypack.dev/canvas-confetti';
+import confetti from 'canvas-confetti';
 
 const NO_MESSAGES = [
   "No",

@@ -150,7 +150,7 @@ const App: React.FC = () => {
             </div>
 
             <h2 className="text-4xl sm:text-6xl md:text-8xl font-romantic text-red-600 drop-shadow-md leading-tight">
-              ¡Un Sí de Cuento!
+              ¡Lo Sabía!
             </h2>
 
             <p className="text-lg sm:text-2xl md:text-3xl font-elegant text-gray-800 italic max-w-md mx-auto leading-relaxed px-2">
@@ -167,6 +167,8 @@ const App: React.FC = () => {
 
             <div className="pt-4 sm:pt-6 border-t border-pink-100 text-pink-400 font-romantic text-xl sm:text-2xl animate-pulse">
               Por siempre y para siempre tuyo
+              <br />
+              Te amo más que a nadie en este mundo
             </div>
           </div>
         )}

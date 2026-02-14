@@ -31,8 +31,10 @@ const App: React.FC = () => {
   const [yesScale, setYesScale] = useState(1);
   const containerRef = useRef<HTMLDivElement>(null);
   const noButtonRef = useRef<HTMLButtonElement>(null);
+  const yesCooldownRef = useRef(false);
 
   const handleYes = () => {
+    if (yesCooldownRef.current) return;
     setState(AppState.SUCCESS);
     confetti({
       particleCount: 150,
@@ -45,6 +47,8 @@ const App: React.FC = () => {
   };
 
   const moveNoButton = useCallback(() => {
+    yesCooldownRef.current = true;
+    setTimeout(() => { yesCooldownRef.current = false; }, 400);
     const card = containerRef.current;
     if (!card) return;
 

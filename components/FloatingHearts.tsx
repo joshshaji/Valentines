@@ -6,10 +6,13 @@ const FloatingHearts: React.FC = () => {
   const [particles, setParticles] = useState<Particle[]>([]);
 
   useEffect(() => {
-    const newParticles: Particle[] = Array.from({ length: 25 }).map((_, i) => ({
+    const isMobile = window.innerWidth < 768;
+    const count = isMobile ? 12 : 25;
+
+    const newParticles: Particle[] = Array.from({ length: count }).map((_, i) => ({
       id: i,
       x: Math.random() * 100,
-      size: Math.random() * (30 - 15) + 15,
+      size: Math.random() * (isMobile ? 20 - 10 : 30 - 15) + (isMobile ? 10 : 15),
       duration: Math.random() * (10 - 5) + 5,
       delay: Math.random() * 5,
     }));

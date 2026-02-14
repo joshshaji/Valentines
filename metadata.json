@@ -1,7 +1,5 @@
 {
   "name": "Valentine's Magic",
-  "description": "A beautiful, interactive Disney-themed Valentine's proposal app featuring custom avatars, animated heart effects, and a playful runaway 'No' button.",
-  "requestFramePermissions": [
-    "camera"
-  ]
+  "description": "Una hermosa app interactiva de propuesta de San Valentín con avatares personalizados, corazones animados y un botón de 'No' que se escapa.",
+  "requestFramePermissions": []
 }
